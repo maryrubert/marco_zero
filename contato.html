@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet"> 
-    <script src="script.js" defer></script>
 
     <title>Recife - PE</title>
     
@@ -23,21 +22,41 @@
         </div><!--/fim topo-->
 
         <div id="area-principal">
-            <div class="fotos">
+            <div class="conteudo">
                 <h2>
-                    Fotos 
+                    Contate-nos 
                 </h2>
                 <br><br>
-                <p>Encante-se com a beleza das paisagens de Recife</p><br><br>
-             
-                   <img src="img\recife.jpg">
-                   <img src="img\recife1.jpg">
-                   <img src="img\recife2.jpg">
-                   <img src="img\recife3.jpg">
-                   <img src="img\recife4.jpg">
-                   <img src="img\recife5.jpg">                         
-                           
+
+                <form action="email.php" class="formulario" method="post"> 
+                                        
+                    <div class="field">
+                        <label for="nome">Seu Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome*" required>
+                    </div>
+                    
+                    <div class="field">
+                        <label for="telefone">Seu Telefone:</label>
+                        <input type="text" id="telefone" name="telefone" placeholder="Digite seu Telefone">
+                    </div>
+            
+                    <div class="field">
+                        <label for="email">Seu E-Mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu E-Mail*" required>
+                    </div>        
+                    <div class="field radiobox">
+                        <span>Deseja receber nossas novidades?</span>
+                        <input type="radio" name="novidades" id="sim" value="sim" checked><label for="sim">Sim</label>
+                        <input type="radio" name="novidades" id="nao" value="nao"><label for="nao">Não</label>
+                    </div>
+                    <div class="field">
+                        <label for="mensagem">Sua mensagem:</label>
+                        <textarea name="mensagem" id="mensagem" placeholder="Mensagem*" required></textarea>
+                    </div>
                 
+                    <input type="submit" name="acao" value="Enviar">
+                </form>
+
             </div>
         </div>
 
@@ -66,12 +85,23 @@
                                 <p>Encante-se com as paisagens da capital pernambucana</p>
                             </a>
                         </li>
-                        <li>  
-                        <a href="contato.html">
-                            <h3>Contato</h3>
-                            <p>Contate-nos</p>
-                        </a>
-                    </li>
+
+                        <li>
+                            <a href="avaliacao.html">
+                                <h3>Avaliações sobre Recife</h3>
+                                <p>O que nossos clientes acharam da cidade</p>
+                            </a>
+                        </li>
+
+
+                        <li>
+                            <a href="contato.html">
+                                <h3>Contato</h3>
+                                <p>Contate-nos</p>
+                            </a>
+                        </li>
+                        <br><br>
+                                                           
 
                     </ul>
                 </p>
